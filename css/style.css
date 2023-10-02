@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+/* COMUNI */
+
+.contenitore {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* /COMUNI */
+
 /* DEBUG */
 .debug nav {
     background-color: #add8e6;
@@ -13,17 +22,29 @@
     height: 50px;
 }
 
-.logo,
+.debug .logo,
 .link,
-.login {
+.login,
+.contenitore.video {
     border: 2px dashed black;
+}
+
+.debug .sfondo-video {
+    background-color: blue;
+    height: 525px;
+}
+
+.debug .contenitore.video {
+    background-color: #ee82ee;
+    height: 415px;
 }
 
 /* /DEBUG */
 
-.contenitore {
-    display: flex;
-    margin: 0 auto;
+/* header */
+
+nav {
+    padding: 20px;
 }
 
 .link {
@@ -42,6 +63,11 @@
 
 }
 
-nav {
-    padding: 20px;
+.contenitore.video {
+    width: 950px;
 }
+
+.sfondo-video{
+    padding: 55px;
+}
+/* /header */
