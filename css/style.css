@@ -16,15 +16,16 @@
 /* DEBUG COMUNE */
 
 .debug .logo,
-.login,
-.link,
-.video,
-.colonna1,
-.colonna2,
-.verde,
-.colonna-1,
-.fine>div {
-    border: 2px dashed black;
+.debug .login,
+.debug .link,
+.debug .video,
+.debug .colonna1,
+.debug .colonna2,
+.debug .verde,
+.debug .colonna-1,
+.debug .fine>div
+{
+border: 2px dashed black;
 }
 
 /* /DEBUG COMUNE */
@@ -138,6 +139,9 @@ nav {
 /* /header */
 
 /* main */
+main {
+    flex-grow: 1;
+}
 
 .colonna {
     justify-content: center;
