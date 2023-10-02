@@ -25,7 +25,9 @@
 .debug .logo,
 .link,
 .login,
-.contenitore.video {
+.contenitore.video,
+.colonna1,
+.colonna2 {
     border: 2px dashed black;
 }
 
@@ -37,6 +39,17 @@
 .debug .contenitore.video {
     background-color: #ee82ee;
     height: 415px;
+}
+
+.debug .colonna1 {
+    background-color: #1e90ff;
+    height: 520px;
+}
+
+.debug .colonna2 {
+    background-color: #ffc0cb;
+    height: 520px;
+
 }
 
 /* /DEBUG */
@@ -67,7 +80,31 @@ nav {
     width: 950px;
 }
 
-.sfondo-video{
+.sfondo-video {
     padding: 55px;
 }
+
 /* /header */
+
+/* main */
+
+.colonna1 {
+    width: 750px;
+}
+
+.colonna2 {
+    width: 500px;
+}
+
+.contenitore.colonna {
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+}
+
+.reverse {
+    background-color: #d3d3d3;
+    flex-direction: row-reverse;
+}
+
+/* /main */
