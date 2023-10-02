@@ -52,6 +52,10 @@
 
 }
 
+.debug .contenitore.verde{
+    height: 935px;
+    background-color: green;
+}
 /* /DEBUG */
 
 /* header */
@@ -107,4 +111,11 @@ nav {
     flex-direction: row-reverse;
 }
 
+.contenitore.schermo{
+    background-color: #d3d3d3;
+    padding: 55px;
+}
+.contenitore.verde{
+    width: 1250px;
+}
 /* /main */
