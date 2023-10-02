@@ -1,5 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* DEBUG */
+.debug nav {
+    background-color: #add8e6;
+}
+
+.debug .contenitore.credenziali {
+    height: 50px;
+}
+
+.logo,
+.link,
+.login {
+    border: 2px dashed black;
+}
+
+/* /DEBUG */
+
+.contenitore {
+    display: flex;
+    margin: 0 auto;
+}
+
+.link {
+    width: 750px;
+}
+
+.logo,
+.login {
+    width: 250px;
+}
+
+.contenitore.credenziali {
+    width: 1250px;
+    justify-content: space-between;
+    background-color: #daa520;
+
+}
+
+nav {
+    padding: 20px;
 }
