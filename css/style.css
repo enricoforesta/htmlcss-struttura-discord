@@ -27,7 +27,8 @@
 .login,
 .contenitore.video,
 .colonna1,
-.colonna2 {
+.colonna2,
+.colonna-1 {
     border: 2px dashed black;
 }
 
@@ -52,10 +53,29 @@
 
 }
 
-.debug .contenitore.verde{
+.debug .contenitore.verde {
     height: 935px;
     background-color: green;
 }
+
+.debug .colonna-foot1 {
+    height: 600px;
+}
+
+.debug .colonna-1 {
+    background-color: #f08080;
+    height: 600px;
+}
+
+.debug .colonna-2 {
+    background-color: #20b2aa;
+    height: 600px;
+}
+
+.debug .colonna-2>div {
+    border: 2px dashed white;
+}
+
 /* /DEBUG */
 
 /* header */
@@ -111,11 +131,43 @@ nav {
     flex-direction: row-reverse;
 }
 
-.contenitore.schermo{
+.contenitore.schermo {
     background-color: #d3d3d3;
     padding: 55px;
 }
-.contenitore.verde{
+
+.contenitore.verde {
     width: 1250px;
 }
+
 /* /main */
+
+/* footer */
+footer {
+    background-color: #23272a;
+}
+
+.colonna-1 {
+    width: 370px;
+
+}
+
+.colonna-2 {
+    width: 875px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colonna-2>div {
+    width: calc(100% / 4)
+}
+
+.contenitore.foot {
+    padding-top: 12px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* /footer */
