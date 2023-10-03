@@ -23,20 +23,15 @@
 .debug .colonna2,
 .debug .verde,
 .debug .colonna-1,
-.debug .fine>div
-{
-border: 2px dashed black;
+.debug .fine>div {
+    border: 2px dashed black;
 }
 
 /* /DEBUG COMUNE */
 
 /* DEBUG HEADER */
-.debug nav {
+.debug .color {
     background-color: #add8e6;
-}
-
-.debug .credenziali {
-    height: 50px;
 }
 
 .debug .sfondo-video {
@@ -60,7 +55,6 @@ border: 2px dashed black;
 .debug .colonna2 {
     background-color: #ffc0cb;
     height: 520px;
-
 }
 
 .debug .reverse,
@@ -69,10 +63,12 @@ border: 2px dashed black;
 }
 
 .debug .contenitore.verde {
-    height: 935px;
+    height: 940px;
     background-color: #228b22;
 }
 
+/* /DEBUG MAIN */
+/* DEBUG FOOTER */
 .debug footer {
     background-color: #23272a;
 }
@@ -91,9 +87,6 @@ border: 2px dashed black;
     border: 2px dashed white;
 }
 
-/* /DEBUG MAIN */
-
-/* DEBUG FOOTER */
 .debug .fine {
     height: 85px;
     background-color: #7fffd4;
@@ -106,42 +99,47 @@ border: 2px dashed black;
 /* /DEBUG FOOTER */
 
 /* header */
-
-nav {
+.color {
     padding: 20px;
 }
 
 .credenziali {
-    width: 1250px;
+    max-width: 1250px;
     justify-content: space-between;
     background-color: #daa520;
-    align-items: center;
+}
+
+.credenziali>* {
     padding: 10px;
 }
 
 .link {
-    width: 750px;
+    width: 60%;
+    text-align: center;
 }
 
 .logo,
 .login {
-    width: 250px;
+    width: 20%;
+}
+
+.login {
+    text-align: end;
 }
 
 .contenitore.video {
-    width: 950px;
+    max-width: 950px;
 }
 
 .sfondo-video {
     padding: 55px;
+    border-bottom: 4px solid #add8e6;
 }
+
 
 /* /header */
 
 /* main */
-main {
-    flex-grow: 1;
-}
 
 .colonna {
     justify-content: center;
@@ -150,11 +148,11 @@ main {
 }
 
 .colonna1 {
-    width: 750px;
+    width: 60%;
 }
 
 .colonna2 {
-    width: 500px;
+    width: 40%;
 }
 
 .reverse {
@@ -193,11 +191,11 @@ main {
 }
 
 .colonna-2>div {
-    width: calc(100% / 4)
+    flex-grow: 1;
 }
 
 .fine {
-    width: 1250px;
+    max-width: 1250px;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
